@@ -1,0 +1,34 @@
+/* Page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container div */
+.container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+/* Box divs */
+.box {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 2px solid #333;
+    background-color: #e6f2ff;
+}
+
+/* Span styling */
+.highlight {
+    color: red;
+    font-weight: bold;
+}
+
+.inline-text {
+    background-color: yellow;
+    padding: 3px;
+}

@@ -1,0 +1,29 @@
+/* Universal Selector */
+* {
+    font-family: Arial, sans-serif;
+}
+
+/* ID Selector */
+#mainHeading {
+    color: darkblue;
+    text-align: center;
+}
+
+/* Class Selector */
+.intro {
+    color: green;
+    font-size: 18px;
+}
+
+/* Descendant Selector */
+.container p {
+    color: brown;
+    font-weight: bold;
+}
+
+/* Group Selector */
+h2, p, span {
+    background-color: #f0f0f0;
+    padding: 5px;
+    margin: 10px 0;
+}

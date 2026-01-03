@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Table Demo</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 2px solid #333;
+            padding: 10px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        caption {
+            caption-side: top;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <caption>Student Marks Table</caption>
+        
+        <!-- Header Row -->
+        <tr>
+            <th>Student</th>
+            <th>Math</th>
+            <th>Science</th>
+            <th>English</th>
+            <th>Total</th>
+        </tr>
+        
+        <!-- First Data Row -->
+        <tr>
+            <td rowspan="2">Siddhi</td> <!-- Row merge -->
+            <td align="center">85</td>
+            <td align="center">90</td>
+            <td align="center">88</td>
+            <td align="center">263</td>
+        </tr>
+        
+        <!-- Second Data Row -->
+        <tr>
+            <td colspan="3" align="center">Average Score</td> <!-- Column merge -->
+            <td align="center">87.7</td>
+        </tr>
+        
+        <!-- Third Data Row -->
+        <tr>
+            <td>Rohan</td>
+            <td align="center">78</td>
+            <td align="center">82</td>
+            <td align="center">80</td>
+            <td align="center">240</td>
+        <

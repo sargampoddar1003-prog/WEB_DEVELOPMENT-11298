@@ -1,0 +1,45 @@
+<!-- 
+HOW THIS THRIFT SHOP WEBSITE WORKS ON THE INTERNET
+
+1. When a user enters the website URL in a browser, the browser sends a request
+   to a web server where the website is hosted.
+
+2. The Domain Name System (DNS) converts the domain name into an IP address
+   so that the browser can locate the correct server.
+
+3. The web server responds by sending the website files such as:
+   index.html, style.css, script.js, and shop.jpg to the browser.
+
+4. The browser reads the HTML file to create the structure of the website,
+   applies CSS for styling and layout, and runs JavaScript for interactivity.
+
+5. JavaScript executes in the browser and handles dynamic behavior like:
+   button clicks, form validation, DOM updates, and API data fetching.
+
+6. The website is a client-side application and does not require a backend
+   or database for basic functionality.
+
+HOW THIS WEBSITE CAN BE HOSTED ONLINE
+
+1. Since this is a static website, it can be hosted using free hosting services
+   like GitHub Pages or Netlify.
+
+2. All project files are uploaded to the hosting platform.
+
+3. The hosting server makes the files available on the internet 24/7.
+
+4. Any user with an internet connection can access the website using its URL.
+
+5. Static hosting is fast, secure, and ideal for student projects.
+-->
+
+
+// This JavaScript file runs in the user's browser
+// It adds interactivity and dynamic behavior to the website
+
+// JavaScript handles user events such as button clicks
+// It manipulates the DOM to update content dynamically
+// It fetches data from public APIs and displays it on the webpage
+
+// The website does not use server-side scripting
+// All logic runs on the client side for faster performance

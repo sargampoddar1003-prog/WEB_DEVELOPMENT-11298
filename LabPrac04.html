@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Form Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        form {
+            width: 400px;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, select {
+            margin-top: 5px;
+        }
+        .checkbox-group, .radio-group {
+            margin-top: 5px;
+        }
+        .buttons {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h2>Registration Form</h2>
+
+        <!-- Text Input -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label>
+        <div class="radio-group">
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+        </div>
+
+        <!-- Checkboxes -->
+        <label>Hobbies:</label>
+        <div class="checkbox-group">
+            <input type="checkbox" id="reading" name="hobbies" value="Reading">
+            <label for="reading">Reading</label>
+            <input type="checkbox" id="sports" name="hobbies" value="Sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="music" name="hobbies" value="Music">
+            <label for="music">Music</label>
+        </div>
+
+        <!-- Select Menu -->
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">--Select Country--</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Australia">Australia</option>
+        </select>
+
+        <!-- Submit & Reset Buttons -->
+        <div class="buttons">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+
+    </form>
+
+</body>
+</html>

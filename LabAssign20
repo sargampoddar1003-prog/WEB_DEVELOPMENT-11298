@@ -1,0 +1,49 @@
+# Step 1: Navigate to your project folder
+cd path/to/your-portfolio   # Replace with your portfolio folder path
+
+# Step 2: Initialize a Git repository
+git init                     # Creates a new Git repository in your folder
+
+# Step 3: Add all files to Git staging area
+git add .                    # Adds all files in the folder to be tracked by Git
+
+# Step 4: Commit the changes with a message
+git commit -m "Initial commit: add portfolio files"  # Saves changes with a description
+
+# Step 5: Add remote GitHub repository
+git remote add origin https://github.com/your-username/portfolio-site.git  
+# Links your local repo to the remote repository on GitHub
+
+# Step 6: Rename the branch to main (if not already)
+git branch -M main            # Sets the main branch name to 'main'
+
+# Step 7: Push your changes to GitHub
+git push -u origin main       # Uploads all commits to GitHub and sets tracking
+
+# ✅ Now your code is live on GitHub
+
+
+# 1. Go to your GitHub repository
+# 2. Click on "Settings" -> "Pages"
+# 3. Under "Source", select:
+#       Branch: main
+#       Folder: /root
+# 4. Click "Save"
+# 5. Your portfolio will be live at:
+#       https://your-username.github.io/portfolio-site/
+# 6. Any new changes pushed to GitHub will automatically update the site.
+
+
+# 1. Go to https://www.netlify.com/ and log in with GitHub
+# 2. Click "New Site" -> "Import from Git"
+# 3. Select your GitHub repository (portfolio-site)
+# 4. Leave build settings empty for pure HTML/CSS/JS
+# 5. Click "Deploy"
+# 6. Netlify will provide a live URL for your portfolio
+# 7. Any new push to GitHub will trigger automatic redeployment
+
+
+git add .                      # Add modified or new files
+git commit -m "Update about section"  # Commit with descriptive message
+git push                       # Push changes to GitHub
+# ✅ GitHub Pages or Netlify will automatically update your live site

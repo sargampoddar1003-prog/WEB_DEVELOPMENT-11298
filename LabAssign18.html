@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create & Manipulate DOM Elements</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 350px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid #333;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        button {
+            margin: 5px;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>DOM Element Manipulation</h2>
+
+        <ul id="list">
+            <li>Item 1</li>
+        </ul>
+
+        <button onclick="addItem()">Add Item</button>
+        <button onclick="removeItem()">Remove Item</button>
+        <button onclick="modifyItem()">Modify First Item</button>
+    </div>
+
+    <script>
+        let count = 2;
+
+        // Append (add) a new child element
+        function addItem() {
+            let li = document.createElement("li");
+            li.innerHTML = "Item " + count;
+            document.getElementById("list").appendChild(li);
+            count++;
+        }
+
+        // Remove last child element
+        function removeItem() {
+            let list = document.getElementById("list");
+            if (list.lastElementChild) {
+                list.removeChild(list.lastElementChild);
+            }
+        }
+
+        // Modify an existing child element
+        function modifyItem() {
+            let firstItem = document.querySelector("#list li");
+            if (firstItem) {
+                firstItem.innerHTML = "Item Modified!";
+                firstItem.style.color = "red";
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Conditions and Loops</title>
+</head>
+<body>
+
+    <h2>JavaScript Conditional Statements & Loops</h2>
+    <button onclick="runDemo()">Run Demo</button>
+
+    <pre id="output"></pre>
+
+    <script>
+        function runDemo() {
+            let output = "";
+
+            // 🔹 Conditional Statement (if-else)
+            let number = 7;
+
+            if (number % 2 === 0) {
+                output += "Number is Even\n\n";
+            } else {
+                output += "Number is Odd\n\n";
+            }
+
+            // 🔹 For Loop
+            output += "For Loop (1 to 5):\n";
+            for (let i = 1; i <= 5; i++) {
+                output += i + " ";
+            }
+            output += "\n\n";
+
+            // 🔹 While Loop
+            output += "While Loop (1 to 5):\n";
+            let j = 1;
+            while (j <= 5) {
+                output += j + " ";
+                j++;
+            }
+            output += "\n\n";
+
+            // 🔹 Do-While Loop
+            output += "Do-While Loop (1 to 5):\n";
+            let k = 1;
+            do {
+                output += k + " ";
+                k++;
+            } while (k <= 5);
+
+            document.getElementById("output").innerText = output;
+        }
+    </script>
+
+</body>
+</html>

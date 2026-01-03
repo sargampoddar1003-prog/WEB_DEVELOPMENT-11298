@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Listeners Demo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        .box {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid #333;
+            border-radius: 8px;
+        }
+
+        .active {
+            background-color: lightgreen;
+        }
+
+        button, input {
+            margin: 8px;
+            padding: 8px 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h2>Event Listener Demo</h2>
+
+        <button id="clickBtn">Click Me</button>
+        <button id="removeBtn">Remove Click Event</button>
+
+        <p id="message">Hover or press keys</p>
+
+        <input type="text" id="inputBox" placeholder="Type something">
+    </div>
+
+    <script>
+        const clickBtn = document.getElementById("clickBtn");
+        const removeBtn = document.getElementById("removeBtn");
+        const message = document.getElementById("message");
+        const inputBox = document.getElementById("inputBox");
+
+        // Mouse click event
+        function handleClick() {
+            message.innerHTML = "Button Clicked!";
+            message.classList.toggle("active");
+        }
+
+        clickBtn.addEventListener("click", handleClick);
+
+        // Remove event listener
+        removeBtn.addEventListener("click", function () {
+            clickBtn.removeEventListener("click", handleClick);
+            alert("Click event removed!");
+        });
+
+        // Mouse over event
+        message.addEventListener("mouseover", function () {
+            message.innerHTML = "Mouse Over Text!";
+        });
+
+        // Keyboard event
+        inputBox.addEventListener("keydown", function (event) {
+            console.log("Key pressed:", event.key);
+        });
+    </script>
+
+</body>
+</html>
